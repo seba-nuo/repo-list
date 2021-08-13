@@ -1,7 +1,6 @@
-import Container from "../components/Container";
+import { Container } from "../components";
 
-function Landing() {
-
+function Login() {
   const client_id = process.env.REACT_APP_client_id;
 
   return (
@@ -18,4 +17,4 @@ function Landing() {
   );
 }
 
-export default Landing;
+export default Login;
