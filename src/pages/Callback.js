@@ -12,12 +12,13 @@ function Callback() {
       let respose = await fetch(
         "https://github.com/login/oauth/access_token" +
           new URLSearchParams({ client_id, client_secret, code }),
-          {
-              mode: "no-cors"
-          }
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+        }
       );
       respose = await respose.json();
-      console.log(respose)
+      console.log(respose);
       sessionStorage.setItem("auth-repo-list", respose);
     };
     getToken();
