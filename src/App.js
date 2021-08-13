@@ -7,6 +7,7 @@ import {
 
 import Login from './pages/Login';
 import Callback from './pages/Callback';
+import Me from './pages/Me';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={Login} />
         <Route exact path="/callback" component={Callback} />
+        <Route exact path="/me" component={Me} />
       </Switch>
     </Router>
   );
