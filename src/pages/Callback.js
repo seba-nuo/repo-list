@@ -14,7 +14,10 @@ function Callback() {
           new URLSearchParams({ client_id, client_secret, code }),
         {
           method: "POST",
-          headers: { "Content-Type": "application/json" },
+          headers: {
+            "Access-Control-Allow-Origin": "*",
+            "Content-Type": "application/json",
+          },
         }
       );
       respose = await respose.json();
