@@ -1,0 +1,40 @@
+.repositories {
+    display: flex;
+    text-decoration: none;
+    color: #444;
+    background-color: #fafafa;
+    width: 40%;
+    margin: 10px;
+    justify-content: space-between;
+}
+
+.stats {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 0 5px;
+    font-size: small;
+    justify-content: space-evenly;
+}
+
+.numbers {
+    margin: 0;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+}
+
+.addFavorites {
+    height: 30px;
+    background-color: white;
+    border: 1px solid #444;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.addFavorites:hover {
+    color: #fafafa;
+    background-color: #444;
+}

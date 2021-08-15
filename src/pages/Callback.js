@@ -23,7 +23,7 @@ function Callback() {
       const body = resp.body;
       
         const access_token = body.access_token;
-        sessionStorage.setItem("auth-your-repo", access_token);
+        localStorage.setItem("auth-your-repo", access_token);
         setToken(access_token);
     };
 
