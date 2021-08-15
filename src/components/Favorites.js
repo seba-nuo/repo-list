@@ -10,7 +10,8 @@ function Favorites({ favorites }) {
       <h1>Your 💖 repo's</h1>
       {favorites.map((fav) => (
         <div className={styles.container} key={fav.url}>
-          <h1 className={styles.name}>{fav.name}</h1><span>💖</span>
+          <h1 className={styles.name}>{fav.name}</h1>
+          <span className={styles.hearth}>💖</span>
         </div>
       ))}
     </div>
