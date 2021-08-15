@@ -1,0 +1,15 @@
+.profile {
+    background-color: #151515;
+    display: flex;
+    color: #ffffff;
+    align-items: center;
+    justify-content: center;
+}
+
+.name, .login {
+    margin: 10px;
+}
+
+.login {
+    font-size: 25px;
+}
