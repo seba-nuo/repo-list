@@ -1,3 +1,3 @@
 export {default as Profile} from './Profile';
-export {default as Repository} from './Repository';
+export {default as Repositories} from './Repositories';
 export {default as Favorites} from './Favorites';

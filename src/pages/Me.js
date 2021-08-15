@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
-import { Repository, Profile, Favorites } from "../components";
+import { Repositories, Profile, Favorites } from "../components";
 import { Redirect, useLocation } from "react-router-dom";
 import { profile, repositories } from "../utils";
+import styles from "./Me.module.css";
 
 function Me() {
   const [userInfo, setUserInfo] = useState(null);
@@ -38,12 +39,14 @@ function Me() {
   ) : (
     <>
       <Profile profile={profile(userInfo)} />
-      <Favorites favorites={favorites} />
-      <Repository
-        repositories={repositories(userInfo)}
-        addFavorites={setFavorites} //used to update favorites
-        favorites={favorites}
-      />
+      <div className={styles.container}>
+        <Favorites favorites={favorites} />
+        <Repositories
+          repositories={repositories(userInfo)}
+          addFavorites={setFavorites} //used to update favorites
+          favorites={favorites}
+        />
+      </div>
     </>
   );
 }

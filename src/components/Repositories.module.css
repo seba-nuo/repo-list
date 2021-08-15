@@ -3,9 +3,12 @@
     text-decoration: none;
     color: #444;
     background-color: #fafafa;
-    width: 40%;
     margin: 10px;
+    width: 40rem;
     justify-content: space-between;
+}
+.text {
+    margin-left: 10px;
 }
 
 .stats {
@@ -19,6 +22,7 @@
 
 .numbers {
     margin: 0;
+    padding: 3px 8px;
 }
 
 .card {
@@ -26,15 +30,24 @@
     align-items: center;
 }
 
-.addFavorites {
-    height: 30px;
+.addFavorite {
+    height: 40px;
     background-color: white;
-    border: 1px solid #444;
     cursor: pointer;
     border-radius: 3px;
+    font-size: 1.2em;
 }
 
-.addFavorites:hover {
-    color: #fafafa;
-    background-color: #444;
+.addFavorite:hover {
+    font-size: 1.7em;
+    height: 43px;
+    transition: 0.3s;
+}
+
+.addedFavorite {
+    height: 40px;
+    background-color: rgb(78, 78, 78);
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 1.2em;
 }
