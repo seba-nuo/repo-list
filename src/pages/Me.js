@@ -40,7 +40,7 @@ function Me() {
     <>
       <Profile profile={profile(userInfo)} />
       <div className={styles.container}>
-        <Favorites favorites={favorites} />
+        <Favorites favorites={favorites} setFavorites={setFavorites} />
         <Repositories
           repositories={repositories(userInfo)}
           addFavorites={setFavorites} //used to update favorites

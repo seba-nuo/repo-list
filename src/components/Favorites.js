@@ -1,7 +1,12 @@
 import styles from "./Favorites.module.css";
 
-function Favorites({ favorites }) {
+function Favorites({ favorites, setFavorites }) {
   // array of fav
+  const removeFav = (fav) => {
+    const newFavorites = favorites.filter(f => f !== fav);
+    setFavorites(newFavorites)
+
+  };
 
   return !favorites.length ? (
     <p>Add some repositories to your favorites</p>
@@ -11,7 +16,8 @@ function Favorites({ favorites }) {
       {favorites.map((fav) => (
         <div className={styles.container} key={fav.url}>
           <h1 className={styles.name}>{fav.name}</h1>
-          <span className={styles.hearth}>💖</span>
+          <span onClick={() => removeFav(fav)} className={styles.hearth}>
+          </span>
         </div>
       ))}
     </div>

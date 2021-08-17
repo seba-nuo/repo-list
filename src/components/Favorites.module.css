@@ -9,6 +9,12 @@
     margin-bottom: 10px;
 }
 
-.hearth {
+.hearth::before {
+    content: "💖";
     font-size: 3em;
+    cursor: pointer;
+}
+
+.hearth:hover::before {
+    content: "💔";
 }
